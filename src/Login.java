@@ -1,17 +1,32 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
-/**
- *
- * @author Elsza
- */
+
 public class Login extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Login
-     */
+    private JLabel IbUsername;
+    private JLabel IbPassword;
+    private JTextField txtUsername;
+    private JPasswordField txtPassword;
+    private JButton jButton1;
+    private JLabel jLabel1;
+    private JPanel jPanel1;
+    
+    
+    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/penjualan tiket bioskop";
+    private static final String USERNAME = "Erryka";
+    private static final String PASSWORD = "Kaladawa123";
+    
     public Login() {
         initComponents();
     }
